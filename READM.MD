@@ -12,8 +12,8 @@ docker system prune
 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:9.7.1-community
 ```
 
+## Sonar-Scanner
 ```
-# Sonar-Scanner
 cd tmp
 sudo wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.7.0.2747-linux.zip
 
