@@ -21,7 +21,19 @@ unzip sonar-scanner-cli-4.7.0.2747-linux.zip
 
 mv sonar-scanner-cli-4.7.0.2747-linux /opt/sonar-scanner
 
-sudo nano /opt/sonar-scanner/conf/sonar-scanner.properties
-sonar.host.url=http://sonarqube_ip:9000
-sonar.sourceEncoding=UTF-8
+vi /opt/sonar-scanner/conf/sonar-scanner.properties
+
+# uncomment
+sonar.host.url=http://localhost:9000
+
+# Definir PATH permanente
+vim ~/.bashrc
+vim ~/.zshrc
+
+# Ecreva na ultima linha
+export PATH="/opt/sonarscanner/bin:$PATH"
+
+# Carregar PATH
+source ~/.zshrc
+source ~/.bashrc
 ```
